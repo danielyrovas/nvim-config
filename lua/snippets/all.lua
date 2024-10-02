@@ -1,0 +1,48 @@
+---@diagnostic disable: undefined-global
+
+-- env is setup by default
+-- local extras = require "luasnip.extras"
+-- local snip_env = {
+--     s = ls.snippet,
+--     sn = ls.snippet_node,
+--     isn = ls.indent_snippet_node,
+--     t = ls.text_node,
+--     i = ls.insert_node,
+--     f = ls.function_node,
+--     c = ls.choice_node,
+--     d = ls.dynamic_node,
+--     r = ls.restore_node,
+--     events = require "luasnip.util.events",
+--     ai = require "luasnip.nodes.absolute_indexer",
+--     extras = extras,
+--     l = extras.lambda,
+--     rep = extras.rep,
+--     p = extras.partial,
+--     m = extras.match,
+--     n = extras.nonempty,
+--     dl = extras.dynamic_lambda,
+--     fmt = require("luasnip.extras.fmt").fmt,
+--     fmta = require("luasnip.extras.fmt").fmta,
+--     conds = require "luasnip.extras.expand_conditions",
+--     postfix = require("luasnip.extras.postfix").postfix,
+--     types = require "luasnip.util.types",
+--     parse = require("luasnip.util.parser").parse_snippet,
+--     ms = ls.multi_snippet,
+--     k = require("luasnip.nodes.key_indexer").new_key,
+-- }
+-- opts.snip_env = {}
+-- for k, v in pairs(snip_env) do
+--     -- we can't just access the global `ls_file_snippets`, since it will be
+--     -- resolved in the environment of the scope in which it was defined.
+--     opts.snip_env[k] = function(...)
+--         table.insert(getfenv(2).ls_file_snippets, v(...))
+--     end
+-- end
+return {
+    -- s() TODO: add date snippet that gets month as name
+    -- {
+    --     "prefix": "date",
+    --     "body": ["${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    --     "description": "Put the date in (Y-m-D) format"
+    -- },
+}
